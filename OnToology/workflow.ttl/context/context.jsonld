@@ -1,0 +1,165 @@
+{
+  "@context" : {
+    "executes" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#executes",
+      "@type" : "@id"
+    },
+    "ParallelLoop" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#ParallelLoop"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "lowerBound" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#lowerBound",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Cycle" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#Cycle"
+    },
+    "hasHost" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#hasHost",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasCondition" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#hasCondition",
+      "@type" : "@id"
+    },
+    "JavaClass" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#JavaClass"
+    },
+    "hasAction" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#hasAction",
+      "@type" : "@id"
+    },
+    "hasActionType" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#hasActionType",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasProperties" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#hasProperties",
+      "@type" : "@id"
+    },
+    "WebService" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#WebService"
+    },
+    "CWLTool" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#CWLTool"
+    },
+    "WSDLService" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#WSDLService"
+    },
+    "BasicActionType" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#BasicActionType"
+    },
+    "Executable" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#Executable"
+    },
+    "ExternalAgent" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#ExternalAgent"
+    },
+    "PythonScript" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#PythonScript"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "WorkflowDescription" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#WorkflowDescription"
+    },
+    "StateChangeAction" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#StateChangeAction"
+    },
+    "LanguageInvocation" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#LanguageInvocation"
+    },
+    "BooleanCondition" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#BooleanCondition"
+    },
+    "SOAPService" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#SOAPService"
+    },
+    "hasActionTarget" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#hasActionTarget",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "onStateChange" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#onStateChange",
+      "@type" : "@id"
+    },
+    "upperBound" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#upperBound",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Identifiable" : {
+      "@id" : "https://www.eclipse.org/ice/data#Identifiable"
+    },
+    "ConditionalAction" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#ConditionalAction"
+    },
+    "ShellScript" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#ShellScript"
+    },
+    "hasState" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#hasState"
+    },
+    "Condition" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#Condition"
+    },
+    "FortranFunction" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#FortranFunction"
+    },
+    "RESTfulService" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#RESTfulService"
+    },
+    "dependsOn" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#dependsOn",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/elements/1.1/language"
+    },
+    "ActionType" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#ActionType"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "Loop" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#Loop"
+    },
+    "targetMethod" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#targetMethod",
+      "@type" : "@id"
+    },
+    "Action" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#Action"
+    },
+    "Task" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#Task"
+    },
+    "stepSize" : {
+      "@id" : "https://www.eclipse.org/ice/workflows#stepSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/elements/1.1/format"
+    }
+  }
+}

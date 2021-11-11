@@ -1,0 +1,640 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Jay Jay Billings"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://www.eclipse.org/ice"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "http://purl.org/dc/elements/1.1/language" : [ {
+    "@value" : "en"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "The Eclipse Integrated Environment Workflow\n\t\t\tOntology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.eclipse.org/ice/workflows#BasicActionType"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#Condition"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#Executable"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#LanguageInvocation"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#ShellScript"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#WebService"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.eclipse.org/ice/workflows#BasicActionType"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#Executable"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#LanguageInvocation"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#ShellScript"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#WebService"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Executing"
+    }, {
+      "@value" : "Failed"
+    }, {
+      "@value" : "Finished"
+    }, {
+      "@value" : "Initialized"
+    }, {
+      "@value" : "Ready"
+    }, {
+      "@value" : "Reviewing"
+    }, {
+      "@value" : "Waiting"
+    }, {
+      "@value" : "WaitingForInfo"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.eclipse.org/ice/workflows#BooleanCondition"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#Cycle"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#ExternalAgent"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#Loop"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.eclipse.org/ice/workflows#FortranFunction"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#JavaClass"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#PythonScript"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.eclipse.org/ice/workflows#RESTfulService"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#SOAPService"
+    }, {
+      "@id" : "https://www.eclipse.org/ice/workflows#WSDLService"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/data#Identifiable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an action that can be executed in a task of the workflow."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Action"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#ActionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This resource defines the type of the action that will be executed. It distinguishes between types of actions such as shell functions, user input, waiting, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Action Type"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#BasicActionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Basic Action Type is the base class for basic actions that are typically considered native actions of workflow engines that execute workflows. This includes actions such as moving files or doing simple reductions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Basic Action Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ActionType"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#BooleanCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boolean Conditions evaluate boolean statements, such as \"if\" statements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boolean Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Condition"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#CWLTool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This node represents a Common Workflow Language (CWL) Tool, which is a description of a command line tool used in CWL workflows."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Common Workflow Language Tool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ShellScript"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#Condition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Conditional Actions Types indicate that the action described by this type executes for the purpose of evaluating some logical condition, such as a boolean statement, a loop, a cycle, or waiting (polling, checking) for feedback from an external agent.\n\nThe targetMethod object property of a Condition must always point to one of the functional (i.e. - non-conditional) action types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ActionType"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#ConditionalAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Conditional Actions are actions that execute conditionally for either conditional tasks (i.e. - as part of the workflow) or as alternative execution flows when the task enters a different state.\n\nConditional actions assigned to tasks indicate that the primary action of the task should be executed according to the conditional action type until the condition action evaluates to true."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Conditional Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Action"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#Cycle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Cycle describes an action that exits when a condition describing the end of a cycle has been met. Where a loop action type describes execution over a range, a cyclic action type checks for the completion of a task cycle."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cycle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Condition"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#Executable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Executable Action Type is the base class for actions that require executing generic programs on the system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Generic Executable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ActionType"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#ExternalAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The External Agent Condition describes an action that waits conditionally on feedback from an external agent, including a human or an external service. Tasks can block themselves to wait on feedback, but in some cases an explicit task may exist for a user can that can be described and explicitly executed in the workflow."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "External Agent Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Condition"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#FortranFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Fortran Function Action Type is the base class for actions that require executing a function in the Fortran programming language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fortran Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#LanguageInvocation"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#JavaClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Java Class Action Type is the base class for actions that require executing a class in the Java programming language. Action Targets for this type should point to a single target method in the class that will create all necessary state and configure the system before executing. Thus, to execute a class Car, it may make sense to call a builder class such as \"CarBuilder.runCar\" instead."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Java Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#LanguageInvocation"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#LanguageInvocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This action type represents actions to invocation language-specific calls or executions as part of the workflow. This could include, for example, executing a method on a native Java class, or a Fortran function or subroutine, or an R function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Language Invocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ActionType"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#Loop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Loop describes an action that exits when a condition describing the end of a loop has been met. The loop executes over a range, and differs from a cyclic action type because the latter checks for the completion of a task cycle."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Loop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Condition"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#ParallelLoop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Parallel Loop Condition indicates that the loop may be executed in parallel (i.e. - that the iterations of the loop are independent)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parallel Loop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Loop"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#PythonScript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Python Script Action Type is the base class for actions that require executing a script in the Python programming language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Python Script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#LanguageInvocation"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#RESTfulService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This action types describes Representational State Transfer (RESTful) web services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RESTful Web Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#WebService"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#SOAPService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This action types describes Simple Object Access Protocol (SOAP) web services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SOAP Web Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#WebService"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#ShellScript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Shell Script action type is for actions that require executing shell scripts on systems that support shells."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Shell Script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ActionType"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#StateChangeAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A State Change is executed under the condition that a task experiences a state change."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Change"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ConditionalAction"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#Task",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tasks are executed by workflows. They are modeled as the combination of an action and properties defining the way that action should be executed.\n\nTasks may also be assigned conditional actions that evaluate when a certain condition has been met based on the execution of the primary action with its properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Task"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#WSDLService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This action types describes Web Service Description Language (WSDL) web services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WSDL Web Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#WebService"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#WebService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Web Service Action Type is the base class for actions that require executing remote web services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Web Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ActionType"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#WorkflowDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class provides a description of the data and tasks that make up a workflow. It describes a collections of tasks that are executed to accomplish an activity with certain goals according to various properties and possibly using some data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Workflow Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.eclipse.org/ice/data#Identifiable"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#dependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates that the task (domain) depends on the successful execution of the range, which is another task or set of tasks.\n\nIt is possible to declare multiple instances of this object property such that one task will depend on the successful execution of multiple tasks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  }, {
+    "@id" : "https://www.eclipse.org/ice/workflows#WorkflowDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "depends On"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  }, {
+    "@id" : "https://www.eclipse.org/ice/workflows#WorkflowDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#executes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property links a workflow description to a task that it should execute."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#WorkflowDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "executes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#hasAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This object property denotes that the task (domain) uses the action (range) to which it points."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ConditionalAction"
+  }, {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#hasActionTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This tag describes the target (program, function, web service, etc.) that the action should execute. Its domain is tied to Action, but its range is open to accommodate what ever the type of the target is."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Action Target"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#hasActionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property links a concrete action type to the subject, which must be an action instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Action Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ActionType"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#hasCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates that the conditional task (domain) is subject to the completion only if the conditional action (range) executes successfully."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#ConditionalAction"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#hasHost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property describes the host on which a task or workflow should be executed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  }, {
+    "@id" : "https://www.eclipse.org/ice/workflows#WorkflowDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Host"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#hasProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property indicates that the task (domain) has the properties described by the range. The range is open because the type of the properties may be undefined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#hasState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This data property describes the present state of the task or workflow.\n\nInitialized\n\nThis pseudostate indicates that the state machine has fully initialized. In practice, full and successful initialization results in an immediate local transition to Ready.\n\nFailed\n\nThis state indicates that an unexpected failure happened while executing the task.\n\nReviewing\n\nThe Reviewing state is entered when a task needs to spend a large amount of time to review information received for pre-, post-, or in-situ processing that is required to execute the task. Once the review is complete, the task will transition into the Executing state in the ideal primary flow.\n\nWaiting\n\nTasks in the waiting state are waiting on resources to be properly allocated, including either compute or data resources.\n\nWaitingForInfo\n\nTasks in the WaitingForInfo state are waiting on information from an external agent.\n\nFinished\n\nThis is the terminal state for the task and indicates that it has been completely executed.\n\nExecuting\n\nThis state indicates that the task is presently executing the work assigned to it.\n\nReady\n\nThe ready state indicates that the task can be executed and that all initialization has completed, or that execution has finished and the task is ready to be executed again."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  }, {
+    "@id" : "https://www.eclipse.org/ice/workflows#WorkflowDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has State"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#lowerBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An upper bound on a range between this bound and a minimum, lower bound, with a set of discrete steps of finite size between the two bounds."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lower Bound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#onStateChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property links a task (domain) to a state change action (range) that it should execute when its state changes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "on State Change"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#StateChangeAction"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#stepSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The step size between upper and lower bounds for any such configuration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Step Size"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#targetMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property identifies the target method that should be used to launch the action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.eclipse.org/ice/workflows#JavaClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "target method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://www.eclipse.org/ice/workflows#upperBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A lower bound on a range between this bound and a maximum, upper bound, with a set of discrete steps of finite size between the two bounds."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Upper bound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+} ]
